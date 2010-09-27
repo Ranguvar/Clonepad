@@ -1,6 +1,5 @@
 /*
- * Copyright (c) 2010
- * 	Devin Cofer <ranguvar@archlinux.us>
+ * Copyright (c) 2010 Devin Cofer <ranguvar@archlinux.us>
  *
  * Permission to use, copy, modify, and/or distribute this software for any
  * purpose with or without fee is hereby granted, provided that the above
@@ -20,7 +19,7 @@
 #include <stdlib.h>
 
 int
-main (int argc, char *argv[])
+main(int argc, char *argv[])
 {
 	GtkWidget *window;
 	GtkWidget *label;
@@ -41,8 +40,7 @@ main (int argc, char *argv[])
 	gtk_container_add(GTK_CONTAINER(window), label);
 
 	gtk_widget_show_all(window);
-	/* main loop, execution stays here until program is closed */
-	gtk_main();
+	gtk_main();  /* main loop, execution stays here until program close */
 
 	return EXIT_SUCCESS;
 }
